@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    background-color: rgb(31, 29, 41);
+    padding: 20px;
+}
+
+.header__title > h1 {
+    color: white;
+}
+
+.header__title > h5 {
+    color: rgb(152, 167, 189);
+}

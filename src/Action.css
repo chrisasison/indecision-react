@@ -1,0 +1,27 @@
+.actions {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.button {
+    background-color: rgb(79, 38, 117);
+    color: rgb(150, 132, 167);
+    width: 500px;
+    height: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 999px;
+    outline: none;
+    box-shadow: 0px 10px 10px -7px black;
+}
+
+.button:hover {
+    background-color: #632388;
+    width: 500px;
+    height: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 999px;
+    padding: 0 30px;
+}
