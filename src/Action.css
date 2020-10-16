@@ -1,27 +1,21 @@
-.actions {
+.action {
     display: flex;
     justify-content: center;
-    margin: 40px;
+    padding: 30px;
 }
 
-.button {
-    background-color: rgb(79, 38, 117);
-    color: rgb(150, 132, 167);
-    width: 500px;
-    height: 150px;
-    font-size: 30px;
-    font-weight: 900;
-    border-radius: 999px;
+.action__button {
+    width: 25%;
+    height: 100px;
+    font-size: 40px;
     outline: none;
-    box-shadow: 0px 10px 10px -7px black;
-}
-
-.button:hover {
-    background-color: #632388;
-    width: 500px;
-    height: 150px;
-    font-size: 30px;
-    font-weight: 900;
     border-radius: 999px;
-    padding: 0 30px;
+    cursor: pointer;
+    background-color: rgb(71, 34, 105);
+    color: rgb(200, 196, 212);
+    border-top: none;
+    border-left: none;
+    border-right: 3px solid rgb(43, 42, 42);
+    border-bottom: 3px solid rgb(43, 42, 42);
+    box-shadow: 0px 8px 10px -7px black;
 }

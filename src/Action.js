@@ -1,11 +1,11 @@
 import React from 'react';
 import './Action.css';
 
-function Actions({hasOptions, handlePick}) {
+function Action({hasOptions, handlePick}) {
     return (
-        <div className="actions">
+        <div className="action">
             <button
-                className="button"
+                className="action__button"
                 onClick={handlePick}
                 disabled={!hasOptions}
             >
@@ -15,4 +15,4 @@ function Actions({hasOptions, handlePick}) {
     )
 }
 
-export default Actions
+export default Action

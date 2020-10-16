@@ -1,15 +1,18 @@
 .header {
     display: flex;
     justify-content: center;
-    font-size: x-large;
-    background-color: rgb(31, 29, 41);
-    padding: 20px;
+    background-color: rgb(34, 31, 46);
+    padding: 15px;
 }
 
 .header__title > h1 {
-    color: white;
+    font-size: 60px;
+    color: rgb(220, 218, 226);
+    background-color: rgb(34, 31, 46);
 }
 
 .header__title > h5 {
-    color: rgb(152, 167, 189);
+    font-size: 20px;
+    color: rgb(200, 196, 212);
+    background-color: rgb(34, 31, 46);
 }

@@ -1,10 +1,21 @@
 import React from 'react';
 import './Option.css';
 
-function Option({optionText}) {
+function Option({optionText, handleDeleteOption}) {
     return (
-        <div>
-            {optionText}
+        
+        <div className="option">
+            <ul>
+                <li>
+                    {optionText}
+                    <button
+                    onClick={(e) => handleDeleteOption(optionText) }
+                    className="optionRemove__button"
+                    >
+                        x
+                    </button>
+                </li>
+            </ul>
         </div>
     )
 }

@@ -2,14 +2,25 @@ import React from 'react';
 import Option from './Option';
 import './Options.css';
 
-function Options({ options, handleDeleteOptions }) {
+function Options({ options, handleDeleteOptions, handleDeleteOption, hasOption }) {
     return (
-        <div>
-            <button onClick={handleDeleteOptions}>Remove All</button>
+        <div className="options">
+            <div className="remove__all">
+                <h2>Your Options</h2>
+                <button className="remove__button" onClick={handleDeleteOptions}>Remove All</button>
+            </div>
+            <div className="option__div">
             {
-                options.map((option) => <Option key={option} optionText={option} />)
+                options.map((option) =>
+                    <Option
+                        key={option}
+                        optionText={option}
+                        handleDeleteOption={handleDeleteOption}
+                    />)
             }
-            <Option />
+            </div>
+
+
         </div>
     )
 }

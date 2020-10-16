@@ -7,15 +7,14 @@ import AddOptions from './AddOptions'
 
 
 function App() {
-  const title = 'Indecision';
-  const subtitle = 'Making hard decisions a little bit easier';
-  const [options, setOptions] = useState([])
+  const title = 'Indecision.';
+  const subtitle = 'Making hard decisions a little bit easier...';
+  const [options, setOptions] = useState([]);
   
-  
-
-  const handleDeleteOptions = () => {
-    setOptions([])
-  };
+  const handleDeleteOptions = () => setOptions([]);
+  const handleDeleteOption = (optionToRemove) => {
+    setOptions(() => options.filter((option) => optionToRemove !== option))
+  }
 
   const handlePick = () => {
     const randomIndex = Math.floor(Math.random() * options.length)
@@ -27,7 +26,7 @@ function App() {
     if (options.indexOf(option) > -1) {
       return console.log('This Option already exists.')
     }
-    setOptions(options.concat(option))
+    setOptions(options.concat(option));
   }
 
   return (
@@ -48,6 +47,7 @@ function App() {
         <Options
           options={options}
           handleDeleteOptions={handleDeleteOptions}
+          handleDeleteOption={handleDeleteOption}
         />
       </div>
       <div className="addOptions">
